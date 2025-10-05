@@ -1,5 +1,5 @@
 nav{
-    background-color: orange;
+    background-color: gold;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,6 +8,13 @@ body{
     margin: 0;
 }
 .aaaa{
-    height: 500px;
-    width: 1800px;
+    height: 250px;
+    width: 1500px;
 }
+.icondiv {
+  display: flex;
+  align-items: center;
+  padding: auto;
+  margin: 0px 500px 0px 0px;
+}
+

@@ -13,20 +13,91 @@
         <p>Week 14</p>
     </nav>
     
-    <div >
-        <h2>
-            <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0iS7jiyott0p9CVv12-8sFOaGmYPCQWz1yA&s" alt="icon" width="100px" height="100px">
-            "ITF Simple Bank"
-        </h2>
-        <p>Welcome to my first HTML + CSS + JS website!</p>
-    </div>
-    <div>
+    <div class="icondiv">
+  <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0iS7jiyott0p9CVv12-8sFOaGmYPCQWz1yA&s" 
+       alt="icon" width="100px" height="100px">
+  <div class="text">
+    <h2>ITF Simple Bank</h2>
+    <p>Welcome to my first HTML + CSS + JS website!</p>
+  </div>
+</div>
+    <!-- <div>
         Enter number:<input type="number" id="myinput" value="0">
         <button onclick="add()">+1</button>
-    </div>
+    </div> -->
     <div>
-        <textarea name="yai" class="aaaa" value="kuy" ></textarea>
+          <textarea class="aaaa" rows="3" readonly >1, Current account balance: 1000, Current cash balance: 1000</textarea>
     </div>
+    <div class="icondiv">
+        <div>
+            <h2>Account Overview</h2>
+            <div class="icondiv">
+            <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiVOD5sJfOVN0dcvxvdELS-MEE66aRNCAWw&s" 
+       alt="icon" width="125px" height="125px">
+       <div class="text">
+            <h4>Account Information</h4>
+            <p>name:pasapkorn ueathanakhom </p>
+            <p>type: chaina boy</p>
+  </div>
+</div>
+        </div>
+<div>
+  <h2>Financial Tools</h2>
+  <div class="icondiv">
+        
+         <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiVOD5sJfOVN0dcvxvdELS-MEE66aRNCAWw&s" 
+       alt="icon" width="125px" height="125px">
+       <div class="text">
+          <h4>Currency Converter</h4>
+          <label>Input balance:</label>
+          <input type="number" id="inputBalance" value="0"><br>
+          <label>Output balance:</label>
+          <input type="number" id="outputBalance" readonly value="0"><br>
+          <div class="icondiv"><label>Input currency:</label>
+          <select id="currency">
+            <option value="USD">USD</option>
+            <option value="THB">THB</option>
+          </select>
+          <button id="convertBtn">Convert</button></div>
+          
+    </div>
+    </div></div>
+        
+    </div>
+<div>
+    <div>
+            <div class="icondiv">
+            <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiVOD5sJfOVN0dcvxvdELS-MEE66aRNCAWw&s" 
+       alt="icon" width="125px" height="125px">
+            <div class="text">
+            <h4>Balance Information</h4>
+            <p>current account<input type="number" id="myinput" value="1000"><br>balance:</p>
+            <p>current cash<input type="number" id="myinput" value="1000"><br>balance:</p>
+            <button onclick="">Change</button>
+  </div>
+</div>
+        </div>
+    </div>
+<div>
+    <div>
+            <div class="icondiv">
+            <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiVOD5sJfOVN0dcvxvdELS-MEE66aRNCAWw&s" 
+       alt="icon" width="125px" height="125px">
+            <div class="text">
+            <h4>Bank Operation</h4>
+            <div>
+                <select id="operation">
+            <option value="deposit">Deposit</option>
+            <option value="withdraw">Withdraw</option>
+          </select>
+          <input type="number" id="amount" value="1">
+        </div>
+            <button id="proceedBtn">Proceed</button>
+  </div>
+</div>
+        </div>
+    </div>
+
     <script src="scrip.js"></script>
 </body>
 </html>
