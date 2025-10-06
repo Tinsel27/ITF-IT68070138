@@ -26,7 +26,7 @@
         <button onclick="add()">+1</button>
     </div> -->
     <div>
-          <textarea class="aaaa" rows="3" readonly >1, Current account balance: 1000, Current cash balance: 1000</textarea>
+          <textarea class="aaaa" id="log_area" >1, Current account balance: 1000, Current cash balance: 1000</textarea>
     </div>
     <div class="icondiv">
         <div>
@@ -47,14 +47,14 @@
         
          <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsiVOD5sJfOVN0dcvxvdELS-MEE66aRNCAWw&s" 
        alt="icon" width="125px" height="125px">
-       <div class="text">
+       <div class="text" class="head-ao">
           <h4>Currency Converter</h4>
           <label>Input balance:</label>
           <input type="number" id="inputBalance" value="0"><br>
           <label>Output balance:</label>
           <input type="number" id="outputBalance" readonly value="0"><br>
           <div class="icondiv"><label>Input currency:</label>
-          <select id="currency">
+          <select>
             <option value="USD">USD</option>
             <option value="THB">THB</option>
           </select>
@@ -71,9 +71,9 @@
        alt="icon" width="125px" height="125px">
             <div class="text">
             <h4>Balance Information</h4>
-            <p>current account<input type="number" id="myinput" value="1000"><br>balance:</p>
-            <p>current cash<input type="number" id="myinput" value="1000"><br>balance:</p>
-            <button onclick="">Change</button>
+            <p>current account<input type="number"name = "Current-account" id="money"><br>balance:</p>
+            <p>current cash<input type="number" name="Current-balance" id="cash"><br>balance:</p>
+            <button onclick="Change()">Change</button>
   </div>
 </div>
         </div>
@@ -86,13 +86,13 @@
             <div class="text">
             <h4>Bank Operation</h4>
             <div>
-                <select id="operation">
-            <option value="deposit">Deposit</option>
-            <option value="withdraw">Withdraw</option>
+                <select id="selecter">
+            <option value="Deposite">Deposit</option>
+            <option value="Withdraw">Withdraw</option>
           </select>
-          <input type="number" id="amount" value="1">
+          <input type="number" name="oper_balance" id="balance">
         </div>
-            <button id="proceedBtn">Proceed</button>
+            <button  onclick="Proceed()">Proceed</button>
   </div>
 </div>
         </div>
